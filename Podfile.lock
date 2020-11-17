@@ -1,0 +1,26 @@
+PODS:
+  - JTAppleCalendar (8.0.3)
+  - Realm (10.1.2):
+    - Realm/Headers (= 10.1.2)
+  - Realm/Headers (10.1.2)
+  - RealmSwift (10.1.2):
+    - Realm (= 10.1.2)
+
+DEPENDENCIES:
+  - JTAppleCalendar
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - JTAppleCalendar
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
+  Realm: 031fdd4be7094d01b43af1a5e49766ab644bb800
+  RealmSwift: 43cf2e114baa9d17d34eb81e7d0def31f21cd444
+
+PODFILE CHECKSUM: e1a5884a3eed31665af76f3fe528bc61e6010ace
+
+COCOAPODS: 1.10.0
