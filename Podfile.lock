@@ -1,26 +1,34 @@
 PODS:
+  - AppLocker (2.0):
+    - Valet
   - JTAppleCalendar (8.0.3)
   - Realm (10.1.2):
     - Realm/Headers (= 10.1.2)
   - Realm/Headers (10.1.2)
   - RealmSwift (10.1.2):
     - Realm (= 10.1.2)
+  - Valet (4.1.1)
 
 DEPENDENCIES:
+  - AppLocker
   - JTAppleCalendar
   - RealmSwift
 
 SPEC REPOS:
   trunk:
+    - AppLocker
     - JTAppleCalendar
     - Realm
     - RealmSwift
+    - Valet
 
 SPEC CHECKSUMS:
+  AppLocker: ad734b8027d26ae5cbb4a70eed2bed30159c3b71
   JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
   Realm: 031fdd4be7094d01b43af1a5e49766ab644bb800
   RealmSwift: 43cf2e114baa9d17d34eb81e7d0def31f21cd444
+  Valet: 11ab0e318b7284888a81392e36136563b4af5deb
 
-PODFILE CHECKSUM: e1a5884a3eed31665af76f3fe528bc61e6010ace
+PODFILE CHECKSUM: 1fe5220c61d3c97dc8cc7d6da1881145c79b6ce7
 
 COCOAPODS: 1.10.0

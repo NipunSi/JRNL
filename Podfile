@@ -8,5 +8,6 @@ target 'MyJournal' do
   # Pods for MyJournal
     pod 'RealmSwift'
     pod 'JTAppleCalendar'
+    pod 'AppLocker'
 
 end
