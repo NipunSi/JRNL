@@ -30,7 +30,9 @@ class EntryViewController: UIViewController {
         entryTextView.delegate = self
         
         dateLabel.text = entryBrain.getDateString(presentedDate)
-        promptLabel.text = entryBrain.getRandomPrompt()
+        promptLabel.text = "No prompt chosen"
+        promptLabel.alpha = 0.6
+        //promptLabel.text = entryBrain.getRandomPrompt()
         
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -47,15 +49,15 @@ class EntryViewController: UIViewController {
         if let entry = entryBrain.loadEntry(from: presentedDate) {
             entryTextView.text = entry.content
             promptLabel.text = entry.prompt
+            promptLabel.alpha = entry.prompt == "No prompt chosen" ? 0.6 : 1.0
             moodButton.setImage(UIImage(named: "\(entry.mood?.lowercased() ?? "none")50")?.withTintColor(.label), for: .normal)
-            if entry.mood == "None" {
-                moodButton.alpha = 0.6
-            } else {
-                moodButton.alpha = 1.0
-            }
+            moodButton.alpha = entry.mood == "None" ? 0.6 : 1.0
+
         } else {
             entryTextView.text = ""
-            promptLabel.text = entryBrain.getRandomPrompt()
+            promptLabel.text = "No prompt chosen"
+            promptLabel.alpha = 0.6
+            //promptLabel.text = entryBrain.getRandomPrompt()
             moodButton.setImage(UIImage(named: "neutral50")?.withTintColor(.label).withTintColor(.label), for: .normal)
             moodButton.alpha = 0.6
         }
