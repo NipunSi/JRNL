@@ -44,6 +44,6 @@ The app uses Realm for data storage and persistence. Each entry in the database 
 <br />
 <br />
 
->This is a learning project created by implementing different Swift components. Check my portfolio at [nipun.io](https://nipun.io).
+>Check my other projects and full portfolio at [nipun.io](https://nipun.io).
 
 <br />
