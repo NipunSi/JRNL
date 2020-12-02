@@ -1,4 +1,4 @@
-# JRNL
+# JRNL - [Download on the App Store](https://apps.apple.com/us/app/jrnl-minimalist-journal/id1541567042)
 
 <p align="center">
 <img src="Images/JRNLIcon.png" width="100" height="100">
